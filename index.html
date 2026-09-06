@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="theme-color" content="#082d2e"/>
+  <title>Who Are You Inviting? | Solid Rock Dublin</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="event-shell">
+  <main class="mobile-wrap">
+    <section class="mobile-card" aria-labelledby="page-title">
+      <header class="mobile-header">
+        <div class="brand-lockup">
+          <img class="logo" src="solid-rock-logo.png" alt="Solid Rock Dublin logo"/>
+          <div class="brand-text">Solid Rock Dublin<small>Presents</small></div>
+        </div>
+      </header>
+      <div class="mobile-main">
+        <div class="kicker">Prayer Invitation Wall</div>
+        <h1 id="page-title">Sounds <span class="rev">of Revival</span></h1>
+        <p class="subtitle">We’re praying for the people we’re inviting. Add up to <strong>three names</strong> — one at a time — and we’ll pray over them together.</p>
+
+        <div class="counter"><span class="dot"></span><span id="counterText">Person 1 of 3</span></div>
+        <form id="inviteForm" novalidate>
+          <div class="form-group">
+            <label for="inviteeName">INVITEE NAME</label>
+            <input id="inviteeName" class="name-input" type="text" maxlength="40" autocomplete="off" placeholder="First name or first + surname" aria-describedby="formMessage"/>
+          </div>
+          <button id="submitButton" class="submit-btn" type="submit">Send Name</button>
+        </form>
+        <div id="formMessage" class="message" role="status" aria-live="polite"></div>
+        <div class="progress" aria-hidden="true"><span id="p1"></span><span id="p2"></span><span id="p3"></span></div>
+
+        <div class="event-mini"><strong>THURSDAY 17TH – FRIDAY 18TH SEPTEMBER 2026</strong><br/>7PM DAILY · SOLID ROCK DUBLIN · INCHICORE</div>
+        <div class="privacy">Names are displayed live for this prayer session. Please submit invitee names only.</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="profanity.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
